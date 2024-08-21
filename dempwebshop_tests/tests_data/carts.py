@@ -5,7 +5,7 @@ from dempwebshop_tests.tests_data.products import Product, product_4, product_31
 
 @dataclass
 class UserCart:
-    products: list[tuple[Product, int], ...]
+    products: list[tuple[Product, int]]
 
 
 cart_1 = UserCart(products=[(product_72, 3)])

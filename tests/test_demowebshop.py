@@ -1,5 +1,3 @@
-import time
-
 import allure
 from allure_commons.types import Severity
 
@@ -36,10 +34,3 @@ class TestCart:
         cart.open()
         cart.should_have_special_number(total_amount)
         cart.should_have_total_price(total_price)
-
-
-
-
-
-
-

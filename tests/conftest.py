@@ -1,7 +1,7 @@
 import pytest
 from selene import browser
 
-from dempwebshop_tests.utils.auth_cookie import get_auth_cookie, add_auth_cookie
+from dempwebshop_tests.utils.auth_cookie import add_auth_cookie
 
 
 @pytest.fixture(scope='function', autouse=True)
@@ -14,5 +14,3 @@ def browser_manager():
     yield browser
 
     browser.quit()
-
-

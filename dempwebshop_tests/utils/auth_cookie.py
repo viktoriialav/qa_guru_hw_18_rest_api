@@ -1,5 +1,5 @@
-import requests
 import allure
+import requests
 from selene import browser
 
 from dempwebshop_tests.utils.data import endpoint_log_in, BASE_URL, LOGIN, PASSWORD
