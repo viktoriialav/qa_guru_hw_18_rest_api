@@ -1,5 +1,6 @@
 # User-specific stuff
 summary.md
+.env
 
 # JetBrains
 .idea/

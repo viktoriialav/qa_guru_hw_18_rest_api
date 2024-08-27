@@ -52,3 +52,6 @@ class CartPage:
     def should_have_total_price(self, value):
         with allure.step('Verify total price of products'):
             browser.element('.order-total').should(have.exact_text(f'{value:.2f}'))
+
+
+cart = CartPage()

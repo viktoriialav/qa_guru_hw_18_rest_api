@@ -1,7 +1,7 @@
 import allure
 from allure_commons.types import Severity
 
-from dempwebshop_tests.pages.cart_page import CartPage
+from dempwebshop_tests.pages.cart_page import cart
 from dempwebshop_tests.tests_data.carts import cart_1, cart_2
 
 
@@ -11,7 +11,6 @@ from dempwebshop_tests.tests_data.carts import cart_1, cart_2
 class TestCart:
     def test_add_one_type_of_product_to_cart(self):
         # GIVEN
-        cart = CartPage()
         cart.is_empty()
 
         # WHEN
@@ -24,7 +23,6 @@ class TestCart:
 
     def test_add_some_types_of_products_to_cart(self):
         # GIVEN
-        cart = CartPage()
         cart.is_empty()
 
         # WHEN
